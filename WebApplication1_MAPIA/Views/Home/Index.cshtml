@@ -1,77 +1,108 @@
 ﻿@{
     ViewData["Title"] = "Map I.A Analytics";
 }
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewData["Title"]</title>
-    <style>
-        body {
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .container {
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
-
-        p {
-            font-size: 18px;
-        }
-
-     
-
-        section {
-            height: 500px;
-            padding: 20px 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-
-        footer {
-            background-color: #333;
-            text-align: center;
-            padding: 20px 0;
-        }
-    </style>
+    <title>MapIA</title>
 </head>
-<body>
-    <div class="container">
-        <h1>Map I.A</h1>
-        <p>Analytics</p>
-    </div>
-    <div class="footer">
-        <p>Transforma números em insights & estratégias.</p>
-    </div>
 
+  <style>
+
+    header {
+        margin-top: 20px;
+        height: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    body {
+        background-color: black;
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+
+    section {
+        height: 630px;
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container {
+        max-width: 1000px;
+        display: flex;
+    }
+
+    .texto {
+        flex: 1;
+        text-align: left;
+    }
+
+    .imagem {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .imagem img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+    #texto-informacoes p {
+        font-size: 40px; /* Defina o tamanho da fonte desejado */
+    }
+
+    footer {
+        background-color: #333;
+        text-align: center;
+        padding: 20px 0;
+    }
+  </style>
+
+<body>
+    <header>
+        <nav id="menu-principal" class="menu-contatos">
+            <!-- <p>Cabeçalho Teste Cabeçalho Teste Cabeçalho Teste Cabeçalho Teste</p> -->
+        </nav>
+    </header>
     <section>
-        <nav>
-            <nav id="informacoes-adicionais" class="informacoes-fornecedores">
-                <div class="container">
-                    <p>A MAP I.A. é uma empresa de análise de dados impulsionada pela excelência e inovação.</p>
-                    <p>Somos uma empresa comprometida em oferecer soluções inteligentes e inovadoras para impulsionar o sucesso dos nossos clientes.</p>
-                    <p>Com uma equipe de especialistas, tecnologia de ponta e rigorosos padrões de qualidade, capacitamos organizações a tomar decisões com base em dados e obter vantagem competitiva no mercado.</p>
-                </div>
+        <nav id="informacoes-principais" class="informacoes-empresa">
+            <div class="container">
+                <h1>Map I.A</h1>
+            </div>
         </nav>
     </section>
-   
+    <section id="texto-informacoes" class="texto-empresa">
+        <nav id="informacoes-adicionais" class="informacoes-fornecedores">
+            <div class="container">
+                <div class="texto">
+                    <p>A MAP I.A. é uma empresa de análise de dados impulsionada pela excelência e inovação.</p>
+                    <h5>
+                        Somos uma empresa comprometida em oferecer soluções inteligentes e inovadoras para impulsionar o sucesso dos nossos clientes.
+                        Com uma equipe de especialistas, tecnologia de ponta e rigorosos padrões de qualidade, capacitamos organizações a tomar decisões com base em dados e obter vantagem competitiva no mercado.
+                        Alem disso, possuimos parcerias nacionais e internacionais, fornecendo soluçoes de analise de dados de ponta, apoiadas pela inteligencia artificial, para diversos setores.
+                    </h5>
+                </div>
+                <div class="imagem">
+                    <img src="~/images/logo_mapia.jfif" alt="logo-empresa" />
+                </div>
+            </div>
+        </nav>
+    </section>
+    <footer>
+        <p>Transforma números em insights & estratégias.</p>
+    </footer>
 </body>
 
 </html>
