@@ -10,7 +10,7 @@
     <title>MapIA</title>
 </head>
 
-  <style>
+<style>
 
     header {
         margin-top: 20px;
@@ -22,15 +22,22 @@
     }
 
     body {
+        margin: 100;
+        padding: 100;
+    }
+
+    section:first-of-type {
         background-color: black;
         color: white;
-        margin: 0;
-        padding: 0;
+    }
+
+    section:not(:first-of-type) {
+        background-color: white;
+        color: black;
     }
 
     section {
-        height: 630px;
-        padding: 20px 0;
+        padding: 200px 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -60,15 +67,20 @@
         }
 
     #texto-informacoes p {
-        font-size: 40px; /* Defina o tamanho da fonte desejado */
+        font-size: 30px; /* Defina o tamanho da fonte desejado */
+    }
+
+    #texto-titulo p {
+        font-size: 30px; /* Defina o tamanho da fonte desejado */
     }
 
     footer {
         background-color: #333;
+        color: white;
         text-align: center;
         padding: 20px 0;
     }
-  </style>
+</style>
 
 <body>
     <header>
@@ -79,7 +91,9 @@
     <section>
         <nav id="informacoes-principais" class="informacoes-empresa">
             <div class="container">
-                <h1>Map I.A</h1>
+                @*<h1>Map I.A</h1>*@
+                @*<img src="~/images/logo_mapia.jfif" alt="logo-empresa" />*@
+                <img src="~/images/whatsapp_image_2024-02-21_at_16.47.18-removebg-preview.png" />
             </div>
         </nav>
     </section>
@@ -88,15 +102,27 @@
             <div class="container">
                 <div class="texto">
                     <p>A MAP I.A. é uma empresa de análise de dados impulsionada pela excelência e inovação.</p>
-                    <h5>
+                    <h6>
                         Somos uma empresa comprometida em oferecer soluções inteligentes e inovadoras para impulsionar o sucesso dos nossos clientes.
                         Com uma equipe de especialistas, tecnologia de ponta e rigorosos padrões de qualidade, capacitamos organizações a tomar decisões com base em dados e obter vantagem competitiva no mercado.
-                        Alem disso, possuimos parcerias nacionais e internacionais, fornecendo soluçoes de analise de dados de ponta, apoiadas pela inteligencia artificial, para diversos setores.
-                    </h5>
+                        Além disso, possuímos parcerias nacionais e internacionais, fornecendo soluções de análise de dados de ponta, apoiadas pela inteligência artificial, para diversos setores.
+                    </h6>
                 </div>
                 <div class="imagem">
-                    <img src="~/images/logo_mapia.jfif" alt="logo-empresa" />
+                    @* <img src="~/images/logo_mapia.jfif" alt="logo-empresa" />*@
+                    <img src="~/images/foto_paismap.png" />
                 </div>
+            </div>
+        </nav>
+    </section>
+    <section id="texto-titulo" class="texto-explicativo">
+        <nav id="infromacoes-add" class=" info-add">
+            <div class="texto">
+                <p>Estamos aqui para trazer soluções para você</p>
+                <h6>
+                    nosso compromisso é oferecer soluções   personalizadas e inovadoras para atender as suas necessidades e impulsionar o seu sucesso.
+                </h6>
+
             </div>
         </nav>
     </section>
